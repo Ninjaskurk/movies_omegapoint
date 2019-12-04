@@ -9,6 +9,7 @@ export const movieReducer=(state=defaultState, action) => {
             return {
                 ...state,
                 movies: {
+                    ...state.movies,
                     [action.movie.id]: action.movie
                 }
             }

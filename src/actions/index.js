@@ -11,7 +11,7 @@ export const fetchMovies = () => {
 
 export const editMovie = (body) => {
     let url = 'http://172.18.67.180:3001/movies'
-    if (body.id && body.id > 0) {
+    if (vody && body.id && body.id > 0) {
        url = `${url}/${id}`
     }
 

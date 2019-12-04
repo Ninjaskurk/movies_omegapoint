@@ -4,7 +4,7 @@ import AddButton from '@comp/AddButton'
 const Navbar = ({className}) => {
 return (
         <div className={className}>
-        <AddButton text='first'/>
+        <AddButton text='Add movie'/>
         </div>
     ) 
 }

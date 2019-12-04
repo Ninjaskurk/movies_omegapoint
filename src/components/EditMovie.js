@@ -61,7 +61,6 @@ class EditMovie extends React.Component {
     render() {
       const { togglePopup, popup } = this.props;
       console.log(popup);
-      if (popup && popup.toggle) {
         return (
             <div className='popup'>
                 <div className='popup_inner'>
@@ -86,12 +85,8 @@ class EditMovie extends React.Component {
             </div>
         </div>
         );
-      } 
-      else {
-          return ''
-      }
     }
-  }
+}
 
 const mapStateToProps = (state, ownProps ) => ({
     popup: state.popup,

@@ -13,7 +13,9 @@ class App extends Component {
                 <div className="wrapper">
                     <NavBar className="item"/>
                     <ListBox className="item"/>
-                    <EditMovie/>
+                    {popup && popup.toggle && (
+                        <EditMovie/>
+                     )}
                 </div>
             </div>
         );
